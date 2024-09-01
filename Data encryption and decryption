@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{ int i,n,opt;
+char str[100];
+printf ("enter something\t ");
+scanf("%s",str);
+printf("enter the password\n");
+scanf("%d",&n);
+printf("choose the options\n");
+printf("1 encrypt the data\n 2 decrypt the data\n");
+scanf("%d",&opt);
+switch(opt)
+{
+case 1:
+for (i=0;(i<1000&&str[i]!='\0');i++)
+{str[i]=str[i]+n;
+}
+printf("the ensrypted data is %s",str);
+break;
+case 2:
+
+for (i=0;(i<1000&&str[i]!='\0');i++)
+{str[i]=str[i]-n;
+}
+printf("the decrypted data is %s",str);
+break;
+}
+}
