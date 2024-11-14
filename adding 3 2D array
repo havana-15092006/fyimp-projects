@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main()
+{
+int i,j,k;
+int A[4][4],B[4][4],C[4][4],D[4][4];
+
+printf("the matrix A is\n");
+for (i=0;i<4;i++)
+{for (j=0;j<4;j++)
+{
+A[i][j] = i+j;
+printf("%d\t",A[i][j]);
+} 
+printf("\n");
+}
+printf("-----------\n");
+printf("the matrix B is\n");
+for (i=0;i<4;i++)
+{for (j=0;j<4;j++)
+{
+B[i][j] = 2*i +3*j;
+printf("%d\t",B[i][j]);
+} 
+printf("\n");
+}
+printf("-----------\n");
+printf("the matrix C is\n");
+for (i=0;i<4;i++)
+{for (j=0;j<4;j++)
+{
+C[i][j] = 3*i +6*j;
+printf("%d\t",C[i][j]);
+} 
+printf("\n");
+}
+printf("-----------\n");
+printf("the matrix D is\n");
+for (i=0;i<4;i++)
+{for (j=0;j<4;j++)
+{
+//A[i][j] = i+j;
+//B[i][j] = 2i+3j;
+//C[i][j] = 3i+6j;
+D[i][j] = 6*i + 10*j;
+printf("%d\t",D[i][j]);
+} 
+printf("\n");
+}
+}
