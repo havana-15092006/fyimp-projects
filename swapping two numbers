@@ -15,6 +15,6 @@ int temp;
 temp=num1;
 num1=num2;
 num2=temp;
-printf("\nafter swapping a=%d and b=%d",num1,num2);
+printf("\nafter  swapping a=%d and b=%d",num1,num2);
 
 }
