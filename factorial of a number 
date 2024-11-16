@@ -13,6 +13,6 @@ else
 {
 for (i=1;i<=n;i++)
 {ans=i*ans;}
-printf("n!=%d",ans);
+printf("n!=%lli",ans);
 
 }}
