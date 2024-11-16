@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int i,n;
+long long int ans=1;
+printf(" the number n is \t");
+scanf("%d",&n);
+if (n<0)
+printf("there is no factorial");
+else if (n==0)
+printf("0! is one");
+else 
+{
+for (i=1;i<=n;i++)
+{ans=i*ans;}
+printf("n!=%d",ans);
+
+}}
