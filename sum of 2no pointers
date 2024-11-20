@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+int num1,num2,sum,*a,*b,*c;
+a=&num1;
+b=&num2;
+c=&sum;
+printf("enter the two numbers");
+scanf("%d %d",a,b);
+*c = *a + *b;
+printf("the sum is %d",*c);
+
+}
