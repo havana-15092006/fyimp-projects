@@ -15,4 +15,5 @@ printf("enter the number");
 scanf("%d",&n);
 result=fact(n);
 printf("%lli", result);
+
 }
