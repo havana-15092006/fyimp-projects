@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{int num_a,num_b,*num1,*num2;
+float sum_n,avg_n,*sum,*avg;
+num1=&num_a;
+num2=&num_b;
+sum=&sum_n;
+avg=&avg_n;
+printf("enter two number");
+scanf("%d%d",num1,num2);
+*sum=*num1+*num2;
+*avg=((*sum)/2);
+printf("the sum of %d and %d is %.2f",*num1,*num2,*sum);
+printf("\nthe average of %d and %d is %.2f",*num1,*num2,*avg);
+return 0;
+}
