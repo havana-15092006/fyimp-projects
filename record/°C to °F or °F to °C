@@ -1,0 +1,37 @@
+#include<stdio.h>
+float Fahrenheit(float c)
+{
+return ((9.0/5)*c)+32;
+}
+
+float celsius(float f)
+{
+return ((f-32)*5.0/9);
+}
+int main()
+{int opt;
+printf("choose the option \n 1 celsius to Fahrenheit\n 2 Fahrenheit to celsius");
+scanf("%d",&opt);
+switch (opt)
+{case 1:
+{float F,c;
+printf("enter °c ");
+scanf("%f",&c);
+F=Fahrenheit(c);
+printf("the %.2f °C = %.2f °F ",c,F);
+break;
+}
+case 2:
+{float C,f;
+printf("enter °f ");
+scanf("%f",&f);
+C=celsius(f);
+printf("the %.2f °F = %.2f °C ",f,C);
+break ;
+}
+default:
+{printf("incorrect option");
+break;
+}
+}
+}
