@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+unsigned long long int E,m,c;
+c=299792458;
+printf("enter the value of mass m=");
+scanf("%llu",&m);
+E=(m*c*c);
+printf("c=%llu",c);
+printf("\n E=(m(c^2))= %llu ",E);
+return 0;
+}
