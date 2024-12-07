@@ -1,0 +1,28 @@
+#include<stdio.h>
+float acclrn(float v,float u,float t)
+{ float a;
+a= (v-u)/t;
+return a;
+}
+float distance(float v,float u,float t,float a)
+{
+float s;
+s= (u*t) +( 0.5* (t*t ) * a);
+return s;
+}
+
+
+int main()
+{
+float a,v,u,t,s;
+printf("enter the final velocity");
+scanf("%f",&v);
+printf("enter the initial velocity");
+scanf("%f",&u);
+printf("note time cannot be zero....\n enter the time taken");
+scanf("%f",&t);
+a=acclrn(v,u,t);
+printf("\nthe acceleration= %.2f",a);
+s=distance(v,u,t,a);
+printf("\nthe distance covered is = %.2f",s);
+}
