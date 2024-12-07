@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+int main()
+{ // method 1
+int  sum,n;
+printf("enter the number");
+scanf("%d",&n);
+sum= (n*(n+1))/2;
+printf("\nthe sum of 1st n natural numbers is %d ",sum );
+
+// method 2
+int i,ans=0;
+for(i=1;i<=n;i++)
+ans=ans+i;
+printf("\n the sum of 1st n natural numbers is %d",sum);
+}
