@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int num[100],i,len;
+printf("enter the length of the array");
+scanf("%d",&len);
+printf("enter the number in the array");
+for(i=0;i<len;i++)
+{scanf("%d",&num[i]);
+}
+int max=num[0];
+int min=num[0];
+for(i=0;i<len;i++)
+{
+if(num[i]>max)
+max= num[i];
+
+if (num[i]<min)
+min=num[i];
+}
+printf("the min is %d and max is %d",min,max);
+}
