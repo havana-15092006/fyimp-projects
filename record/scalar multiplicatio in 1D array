@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int arry[100],i,len,n,ans[100];
+printf("enter the length of the array");
+scanf("%d",&len);
+printf("\n enter the numbes in the array\n");
+for(i=0;i<len;i++)
+{scanf("%d",&arry[i]);}
+
+printf("\n enter the no to multiply");
+scanf("%d",&n);
+printf("the results is\n");
+for(i=0;i<len;i++)
+{ ans[i]=arry[i] *n;
+printf("\t %d",ans[i]);
+}
+}
