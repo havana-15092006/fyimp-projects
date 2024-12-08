@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+char str[100],sub_str[100];
+int len,sublen,i,flag,postion;
+printf("enter the string");
+scanf("%s",str);
+printf("enter the substring");
+scanf("%s",sub_str);
+len=strlen(str);
+sublen=strlen(sub_str);
+for(i=0;i<=len-sublen;i++)
+{
+if(strncmp(str+i,sub_str,sublen)==0)
+{flag=1;
+postion=i+1;
+}
+}
+if (flag==1)
+printf("substring is found at %d", postion);
+else
+printf("substring not found");
+}
