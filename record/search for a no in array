@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+int arry[100],i,len,n,flag,postion;
+printf("enter the length of the array");
+scanf("%d",&len);
+printf("\n enter the numbes in the array\n");
+for(i=0;i<len;i++)
+{scanf("%d",&arry[i]);}
+
+printf("\n enter the no to check");
+scanf("%d",&n);
+for(i=0;i<len;i++)
+{if(arry[i] ==n)
+{flag=1;
+postion=i+1;
+}
+}
+if(flag==1)
+{printf("\n the number %d is found at %d th position",n,postion);
+}
+else
+{printf("\n the number %d is not found",n);
+}
+}
